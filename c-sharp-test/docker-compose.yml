@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  dotnet:
+    image: mcr.microsoft.com/dotnet/sdk:latest
+    container_name: dotnet_dev
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true

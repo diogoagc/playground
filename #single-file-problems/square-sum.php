@@ -43,8 +43,7 @@ function square_sum(array $numbers): int
 {
     return array_reduce(
         $numbers,
-        fn($result, $number) =>
-        $result + $number * $number,
+        fn($result, $number) => $result + $number * $number,
         0
     );
 }

@@ -1,0 +1,3 @@
+.venv/
+src/fibonacci_viewer.egg-info/
+__pycache__/

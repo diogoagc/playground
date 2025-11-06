@@ -30,7 +30,7 @@ function population_growth($p0, $percent, $aug, $p): int
     $decimal = $percent / 100;
 
     while ($p0 < $p) {
-        $p0 += $p0 * $decimal + $aug;
+        $p0 += intval($p0 * $decimal + $aug);
         $numberOfYears++;
     }
 
